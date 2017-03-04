@@ -4,10 +4,7 @@ import {PostService} from './service/post.service';
 @Component({
   selector: 'user',
   template: `<h1>User Component</h1>
-  <div *ngFor="let post of posts">
-    <h3> {{post.title}} </h3>
-    <p> {{post.body}} </p>
-  </div>
+  <proba [postItem]="posts"></proba>
   `,
   providers: [PostService]
 })
